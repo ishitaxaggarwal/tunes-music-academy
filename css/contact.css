@@ -1,0 +1,234 @@
+/* Contact Page Specific Styles */
+
+/* Contact Info Section */
+#contact-info {
+  padding: var(--space-6) 0;
+  background-color: #fff;
+}
+
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-3);
+}
+
+.contact-card {
+  padding: var(--space-3);
+  text-align: center;
+  background-color: var(--color-neutral-100);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--box-shadow-md);
+  transition: var(--transition-normal);
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--box-shadow-lg);
+}
+
+.contact-icon {
+  width: 60px;
+  height: 60px;
+  background-color: var(--color-primary);
+  color: #fff;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: var(--space-2);
+}
+
+.contact-card:hover .contact-icon {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+}
+
+.contact-card h3 {
+  margin-bottom: var(--space-1);
+}
+
+.contact-card p {
+  color: var(--color-neutral-600);
+  margin-bottom: 0;
+}
+
+/* Contact Main Section */
+#contact-main {
+  padding: var(--space-6) 0;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-5);
+}
+
+.contact-form-container,
+.contact-map {
+  background-color: #fff;
+  border-radius: var(--border-radius-lg);
+  padding: var(--space-4);
+  box-shadow: var(--box-shadow-md);
+}
+
+.contact-form-container h2,
+.contact-map h2 {
+  margin-bottom: var(--space-3);
+}
+
+.map-container {
+  height: 300px;
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  margin-bottom: var(--space-3);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.map-directions h3 {
+  margin-bottom: var(--space-2);
+  font-size: 1.25rem;
+}
+
+.map-directions p {
+  margin-bottom: var(--space-1);
+}
+
+.map-directions p strong {
+  color: var(--color-primary);
+}
+
+/* FAQ Section */
+#faq {
+  padding: var(--space-8) 0;
+  background-color: var(--color-neutral-200);
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background-color: #fff;
+  border-radius: var(--border-radius-md);
+  margin-bottom: var(--space-2);
+  overflow: hidden;
+  box-shadow: var(--box-shadow-sm);
+}
+
+.faq-question {
+  padding: var(--space-2) var(--space-3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.faq-question:hover {
+  background-color: var(--color-neutral-100);
+}
+
+.faq-question h3 {
+  margin-bottom: 0;
+  font-size: 1.25rem;
+}
+
+.faq-toggle {
+  color: var(--color-primary);
+  font-size: 1.125rem;
+  transition: var(--transition-fast);
+}
+
+.faq-item.active .faq-toggle {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  padding: 0 var(--space-3);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--transition-normal);
+}
+
+.faq-item.active .faq-answer {
+  padding: 0 var(--space-3) var(--space-3);
+  max-height: 500px;
+}
+
+.faq-answer p {
+  margin-bottom: 0;
+  color: var(--color-neutral-600);
+}
+
+/* Form Success */
+.form-success {
+  text-align: center;
+  padding: var(--space-3);
+}
+
+.form-success i {
+  font-size: 3rem;
+  color: var(--color-success);
+  margin-bottom: var(--space-2);
+}
+
+.form-success h3 {
+  margin-bottom: var(--space-1);
+}
+
+.hidden {
+  display: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .contact-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-3);
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+  
+  .faq-question h3 {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-form-container,
+  .contact-map {
+    padding: var(--space-3);
+  }
+  
+  .faq-question {
+    padding: var(--space-2);
+  }
+  
+  .faq-question h3 {
+    font-size: 1rem;
+  }
+  
+  .faq-answer {
+    padding: 0 var(--space-2);
+  }
+  
+  .faq-item.active .faq-answer {
+    padding: 0 var(--space-2) var(--space-2);
+  }
+}

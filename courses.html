@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses | Tunes Music Academy</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/courses.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header id="main-header">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">
+          <h1>Tunes <span>Music Academy</span></h1>
+        </a>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="courses.html" class="active">Courses</a></li>
+          <li><a href="instructors.html">Instructors</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="mobile-nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section id="courses-hero">
+    <div class="container">
+      <div class="courses-hero-content">
+        <h1>Our <span class="accent">Courses</span></h1>
+        <p>Comprehensive music education for all instruments and skill levels</p>
+      </div>
+    </div>
+    <div class="hero-overlay"></div>
+  </section>
+
+
+
+  <section id="course-catalog">
+    <div class="container">
+      <div class="courses-grid">
+        <!-- Piano Courses -->
+        <div class="course-card" data-instrument="piano" data-level="beginner" data-age="children teens adults seniors">
+          <div class="course-image">
+            <img src="https://images.pexels.com/photos/164821/pexels-photo-164821.jpeg" alt="Piano Beginners">
+            <div class="course-level">Beginner</div>
+          </div>
+          <div class="course-content">
+            <h3>Piano Fundamentals</h3>
+            <p>Perfect for beginners, this course introduces basic piano techniques, note reading, and simple pieces.</p>
+            <div class="course-details">
+              <span><i class="fas fa-calendar"></i> 12 Weeks</span>
+              <span><i class="fas fa-clock"></i> 1 Hour/Week</span>
+              <span><i class="fas fa-user"></i> All Ages</span>
+            </div>
+            <div class="course-price">₹6000</div>
+            <a href="#" class="btn btn-outline course-details-btn" data-course="piano-fundamentals">View Details</a>
+          </div>
+        </div>
+
+        <div class="course-card" data-instrument="piano" data-level="intermediate" data-age="teens adults">
+          <div class="course-image">
+            <img src="https://images.pexels.com/photos/1246437/pexels-photo-1246437.jpeg" alt="Piano Intermediate">
+            <div class="course-level">Intermediate</div>
+          </div>
+          <div class="course-content">
+            <h3>Piano Repertoire & Technique</h3>
+            <p>Develop advanced techniques and explore diverse musical styles from classical to contemporary.</p>
+            <div class="course-details">
+              <span><i class="fas fa-calendar"></i> 16 Weeks</span>
+              <span><i class="fas fa-clock"></i> 1 Hour/Week</span>
+              <span><i class="fas fa-user"></i> Teens & Adults</span>
+            </div>
+            <div class="course-price">₹8000</div>
+            <a href="#" class="btn btn-outline course-details-btn" data-course="piano-intermediate">View Details</a>
+          </div>
+        </div>
+
+        <!-- Guitar Courses -->
+        <div class="course-card" data-instrument="guitar" data-level="beginner" data-age="children teens adults seniors">
+          <div class="course-image">
+            <img src="https://images.pexels.com/photos/1407322/pexels-photo-1407322.jpeg" alt="Guitar Basics">
+            <div class="course-level">Beginner</div>
+          </div>
+          <div class="course-content">
+            <h3>Guitar Basics</h3>
+            <p>Start your guitar journey with proper technique, chord foundations, and strumming patterns.</p>
+            <div class="course-details">
+              <span><i class="fas fa-calendar"></i> 10 Weeks</span>
+              <span><i class="fas fa-clock"></i> 1 Hour/Week</span>
+              <span><i class="fas fa-user"></i> All Ages</span>
+            </div>
+            <div class="course-price">₹6000</div>
+            <a href="#" class="btn btn-outline course-details-btn" data-course="guitar-basics">View Details</a>
+          </div>
+        </div>
+
+        <div class="course-card" data-instrument="guitar" data-level="intermediate" data-age="teens adults">
+          <div class="course-image">
+            <img src="https://images.pexels.com/photos/165971/pexels-photo-165971.jpeg" alt="Guitar Intermediate">
+            <div class="course-level">Intermediate</div>
+          </div>
+          <div class="course-content">
+            <h3>Electric Guitar Techniques</h3>
+            <p>Focus on rock, blues, and jazz styles with emphasis on soloing, effects, and expressive playing.</p>
+            <div class="course-details">
+              <span><i class="fas fa-calendar"></i> 12 Weeks</span>
+              <span><i class="fas fa-clock"></i> 1 Hour/Week</span>
+              <span><i class="fas fa-user"></i> Teens & Adults</span>
+            </div>
+            <div class="course-price">₹6000</div>
+            <a href="#" class="btn btn-outline course-details-btn" data-course="electric-guitar">View Details</a>
+          </div>
+        </div>
+
+        <!-- Violin Courses -->
+        <div class="course-card" data-instrument="violin" data-level="beginner" data-age="children teens adults">
+          <div class="course-image">
+            <img src="https://c02.purpledshub.com/uploads/sites/43/2021/03/when-was-the-violin-invented-2ccbe78.jpg" alt="Violin Beginners">
+            <div class="course-level">Beginner</div>
+          </div>
+          <div class="course-content">
+            <h3>Violin Foundations</h3>
+            <p>Learn proper violin posture, bow technique, note reading, and basic pieces in this introductory course.</p>
+            <div class="course-details">
+              <span><i class="fas fa-calendar"></i> 12 Weeks</span>
+              <span><i class="fas fa-clock"></i> 1 Hour/Week</span>
+              <span><i class="fas fa-user"></i> Ages 7+</span>
+            </div>
+            <div class="course-price">₹6000</div>
+            <a href="#" class="btn btn-outline course-details-btn" data-course="violin-foundations">View Details</a>
+          </div>
+        </div>
+
+        <!-- Voice Courses -->
+        <div class="course-card" data-instrument="voice" data-level="beginner intermediate" data-age="teens adults">
+          <div class="course-image">
+            <img src="https://images.pexels.com/photos/3388899/pexels-photo-3388899.jpeg" alt="Vocal Training">
+            <div class="course-level">All Levels</div>
+          </div>
+          <div class="course-content">
+            <h3>Vocal Performance</h3>
+            <p>Develop your singing voice with proper breathing techniques, range extension, and performance skills.</p>
+            <div class="course-details">
+              <span><i class="fas fa-calendar"></i> 10 Weeks</span>
+              <span><i class="fas fa-clock"></i> 1 Hour/Week</span>
+              <span><i class="fas fa-user"></i> Teens & Adults</span>
+            </div>
+            <div class="course-price">₹6000</div>
+            <a href="#" class="btn btn-outline course-details-btn" data-course="vocal-performance">View Details</a>
+          </div>
+        </div>
+
+        <!-- Drums Courses -->
+        <div class="course-card" data-instrument="drums" data-level="beginner" data-age="children teens adults">
+          <div class="course-image">
+            <img src="https://images.ctfassets.net/3s5io6mnxfqz/2HNsNbf0vLjrPWBHAzTCTW/ffa20bf84222733d71cbc1a71ff2ed20/AdobeStock_71496802.jpeg?w=1920" alt="Drum Basics">
+            <div class="course-level">Beginner</div>
+          </div>
+          <div class="course-content">
+            <h3>Drum Kit Basics</h3>
+            <p>Master the fundamentals of rhythm, coordination, and basic beats on the drum kit.</p>
+            <div class="course-details">
+              <span><i class="fas fa-calendar"></i> 8 Weeks</span>
+              <span><i class="fas fa-clock"></i> 1 Hour/Week</span>
+              <span><i class="fas fa-user"></i> Ages 8+</span>
+            </div>
+            <div class="course-price">₹5000</div>
+            <a href="#" class="btn btn-outline course-details-btn" data-course="drum-basics">View Details</a>
+          </div>
+        </div>
+
+        <!-- Wind Instruments -->
+        <div class="course-card" data-instrument="wind" data-level="beginner intermediate" data-age="children teens adults">
+          <div class="course-image">
+            <img src="https://kayasanatakademi.com/wp-content/uploads/2019/10/yan-flut-kursu.jpg" alt="Saxophone Course">
+            <div class="course-level">All Levels</div>
+          </div>
+          <div class="course-content">
+            <h3>Flute Studies</h3>
+            <p>From beginner to intermediate levels, learn proper embouchure, tone production, and repertoire.</p>
+            <div class="course-details">
+              <span><i class="fas fa-calendar"></i> 12 Weeks</span>
+              <span><i class="fas fa-clock"></i> 1 Hour/Week</span>
+              <span><i class="fas fa-user"></i> Ages 10+</span>
+            </div>
+            <div class="course-price">₹6000</div>
+            <a href="#" class="btn btn-outline course-details-btn" data-course="saxophone-studies">View Details</a>
+          </div>
+        </div>
+
+        <!-- Theory Courses -->
+        <div class="course-card" data-instrument="theory" data-level="beginner intermediate" data-age="teens adults">
+          <div class="course-image">
+            <img src="https://images.pexels.com/photos/6966/abstract-music-rock-bw.jpg" alt="Music Theory">
+            <div class="course-level">All Levels</div>
+          </div>
+          <div class="course-content">
+            <h3>Music Theory Fundamentals</h3>
+            <p>Essential knowledge of scales, chords, rhythm, and notation applicable to all instruments.</p>
+            <div class="course-details">
+              <span><i class="fas fa-calendar"></i> 8 Weeks</span>
+              <span><i class="fas fa-clock"></i> 1 Hour/Week</span>
+              <span><i class="fas fa-user"></i> Teens & Adults</span>
+            </div>
+            <div class="course-price">₹8000</div>
+            <a href="#" class="btn btn-outline course-details-btn" data-course="music-theory">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="group-classes">
+    <div class="container">
+      <div class="section-header">
+        <h2>Group Classes & Workshops</h2>
+        <p>Learn and grow together in our collaborative sessions</p>
+      </div>
+      <div class="group-classes-grid">
+        <div class="group-class-card">
+          <div class="group-class-image">
+            <img src="https://images.pexels.com/photos/8412420/pexels-photo-8412420.jpeg" alt="Children's Music Workshop">
+          </div>
+          <div class="group-class-content">
+            <h3>Early Childhood Music</h3>
+            <p>Interactive music classes for children ages 3-6 focusing on rhythm, singing, and basic instrument exploration.</p>
+            <p class="group-class-schedule"><i class="fas fa-clock"></i> Saturdays, 10:00 AM - 11:00 AM</p>
+            <p class="group-class-price">₹7000 for 8 weeks</p>
+          </div>
+        </div>
+
+        <div class="group-class-card">
+          <div class="group-class-image">
+            <img src="https://images.pexels.com/photos/7095713/pexels-photo-7095713.jpeg" alt="Adult Music Workshop">
+          </div>
+          <div class="group-class-content">
+            <h3>Adult Beginner Ensemble</h3>
+            <p>For adults who have always wanted to play music. Learn an instrument in a supportive group environment.</p>
+            <p class="group-class-schedule"><i class="fas fa-clock"></i> Tuesdays, 6:30 PM - 8:00 PM</p>
+            <p class="group-class-price">₹10000 for 10 weeks</p>
+          </div>
+        </div>
+
+        <div class="group-class-card">
+          <div class="group-class-image">
+            <img src="https://images.pexels.com/photos/8412285/pexels-photo-8412285.jpeg" alt="Jazz Improvisation">
+          </div>
+          <div class="group-class-content">
+            <h3>Classical Music Improvisation Workshop</h3>
+            <p>Develop your improvisational skills in various jazz styles. For intermediate to advanced players.</p>
+            <p class="group-class-schedule"><i class="fas fa-clock"></i> Thursdays, 7:00 PM - 8:30 PM</p>
+            <p class="group-class-price">₹6000 for 8 weeks</p>
+          </div>
+        </div>
+
+        <div class="group-class-card">
+          <div class="group-class-image">
+            <img src="https://images.pexels.com/photos/4087993/pexels-photo-4087993.jpeg" alt="Music Production">
+          </div>
+          <div class="group-class-content">
+            <h3>Digital Music Production</h3>
+            <p>Learn to record, mix, and produce your own music using industry-standard software.</p>
+            <p class="group-class-schedule"><i class="fas fa-clock"></i> Mondays, 6:00 PM - 8:00 PM</p>
+            <p class="group-class-price">₹12000 for 6 weeks</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="course-packages">
+    <div class="container">
+      <div class="section-header">
+        <h2>Course Packages & Discounts</h2>
+        <p>Save with our flexible course bundles and family plans</p>
+      </div>
+      <div class="packages-grid">
+        <div class="package-card">
+          <div class="package-header">
+            <h3>Family Plan</h3>
+            <div class="package-price">15% Off</div>
+          </div>
+          <div class="package-content">
+            <p>Enroll two or more family members and receive 15% off all individual lessons.</p>
+            <ul class="package-features">
+              <li><i class="fas fa-check"></i> Applies to all instruments and skill levels</li>
+              <li><i class="fas fa-check"></i> Flexible scheduling options</li>
+              <li><i class="fas fa-check"></i> Shared practice resources</li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary">Inquire Now</a>
+          </div>
+        </div>
+
+        <div class="package-card featured">
+          <div class="package-header">
+            <h3>Complete Musician Package</h3>
+            <div class="package-price">20% Off</div>
+          </div>
+          <div class="package-content">
+            <p>Combine instrumental lessons with Music Theory course for a comprehensive education.</p>
+            <ul class="package-features">
+              <li><i class="fas fa-check"></i> Weekly instrument lessons</li>
+              <li><i class="fas fa-check"></i> Music Theory course included</li>
+              <li><i class="fas fa-check"></i> Priority scheduling</li>
+              <li><i class="fas fa-check"></i> Quarterly progress assessments</li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary">Inquire Now</a>
+          </div>
+        </div>
+
+        <div class="package-card">
+          <div class="package-header">
+            <h3>Annual Commitment</h3>
+            <div class="package-price">10% Off</div>
+          </div>
+          <div class="package-content">
+            <p>Save 10% when you commit to a full year of weekly lessons.</p>
+            <ul class="package-features">
+              <li><i class="fas fa-check"></i> Lock in current rates</li>
+              <li><i class="fas fa-check"></i> Guaranteed time slot</li>
+              <li><i class="fas fa-check"></i> Two make-up lessons included</li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary">Inquire Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="registration-cta" class="parallax">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready to Start Your Musical Journey?</h2>
+        <p>Schedule a free 30-minute consultation to find the perfect program for you or your child</p>
+        <a href="contact.html" class="btn btn-primary">Register Now</a>
+      </div>
+    </div>
+  </section>
+
+  <div id="course-detail-modal" class="modal-hidden">
+    <div class="modal course-modal">
+      <div class="modal-header">
+        <h3 id="modal-course-title"></h3>
+        <button class="close-modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-course-image">
+          <img id="modal-course-image" src="" alt="Course Image">
+        </div>
+        <div class="modal-course-info">
+          <div class="modal-course-meta">
+            <p><strong>Duration:</strong> <span id="modal-course-duration"></span></p>
+            <p><strong>Level:</strong> <span id="modal-course-level"></span></p>
+            <p><strong>Age Group:</strong> <span id="modal-course-age"></span></p>
+            <p><strong>Price:</strong> <span id="modal-course-price"></span></p>
+          </div>
+          <div class="modal-course-description">
+            <h4>Course Description</h4>
+            <p id="modal-course-description"></p>
+          </div>
+          <div class="modal-course-curriculum">
+            <h4>What You'll Learn</h4>
+            <ul id="modal-course-curriculum"></ul>
+          </div>
+          <div class="modal-course-instructor">
+            <h4>Instructor</h4>
+            <div class="modal-instructor-info">
+              <img id="modal-instructor-image" src="" alt="Instructor">
+              <div>
+                <p id="modal-instructor-name"></p>
+                <p id="modal-instructor-bio"></p>
+              </div>
+            </div>
+          </div>
+          <a href="contact.html" class="btn btn-primary btn-block">Register for this Course</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h3>Tunes Music Academy</h3>
+          <p>Providing exceptional music education since 2008. Our mission is to inspire and nurture musical talent in students of all ages.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> NEW VINOD MODERN ACADEMY, Vikas Lok Ln. No. 4, opposite KUMAR SWEET SHOP, near TIME SQUARE MALL, Vikas Lok, Aamwala, Dehradun, Uttarakhand 248001</li>
+            <li><i class="fas fa-phone"></i> 096344 18955</li>
+            <li><i class="fas fa-envelope"></i> info@tunesmusicacademy.com</li>
+            <li><i class="fas fa-clock"></i> Mon-Fri: 9AM-8PM, Sat: 10AM-6PM</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Tunes Music Academy. All Rights Reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/courses.js"></script>
+</body>
+</html>

@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Reviews | Tunes Music Academy</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/reviews.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header id="main-header">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">
+          <h1>Tunes <span>Music Academy</span></h1>
+        </a>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="instructors.html">Instructors</a></li>
+          <li><a href="reviews.html" class="active">Reviews</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="mobile-nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section id="reviews-hero">
+    <div class="container">
+      <div class="reviews-hero-content">
+        <h1>Student <span class="accent">Reviews</span></h1>
+        <p>Hear what our students and parents have to say about their experience</p>
+      </div>
+    </div>
+    <div class="hero-overlay"></div>
+  </section>
+
+  <section id="reviews-stats">
+    <div class="container">
+      <div class="stats-container">
+        <div class="overall-rating">
+          <h2>Overall Rating</h2>
+          <div class="rating-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <div class="rating-number">4.8/5</div>
+          <p>Based on 247 verified reviews</p>
+        </div>
+        <div class="rating-breakdown">
+          <h3>Rating Breakdown</h3>
+          <div class="rating-bar">
+            <span class="rating-label">5 Stars</span>
+            <div class="progress-bar">
+              <div class="progress" style="width: 85%;"></div>
+            </div>
+            <span class="rating-percent">85%</span>
+          </div>
+          <div class="rating-bar">
+            <span class="rating-label">4 Stars</span>
+            <div class="progress-bar">
+              <div class="progress" style="width: 12%;"></div>
+            </div>
+            <span class="rating-percent">12%</span>
+          </div>
+          <div class="rating-bar">
+            <span class="rating-label">3 Stars</span>
+            <div class="progress-bar">
+              <div class="progress" style="width: 2%;"></div>
+            </div>
+            <span class="rating-percent">2%</span>
+          </div>
+          <div class="rating-bar">
+            <span class="rating-label">2 Stars</span>
+            <div class="progress-bar">
+              <div class="progress" style="width: 1%;"></div>
+            </div>
+            <span class="rating-percent">1%</span>
+          </div>
+          <div class="rating-bar">
+            <span class="rating-label">1 Star</span>
+            <div class="progress-bar">
+              <div class="progress" style="width: 0%;"></div>
+            </div>
+            <span class="rating-percent">0%</span>
+          </div>
+        </div>
+        <div class="category-ratings">
+          <h3>Category Ratings</h3>
+          <div class="category-rating">
+            <span class="category-label">Teaching Quality</span>
+            <div class="category-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <span>5.0</span>
+            </div>
+          </div>
+          <div class="category-rating">
+            <span class="category-label">Facility & Equipment</span>
+            <div class="category-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <span>4.7</span>
+            </div>
+          </div>
+          <div class="category-rating">
+            <span class="category-label">Value for Money</span>
+            <div class="category-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <span>4.6</span>
+            </div>
+          </div>
+          <div class="category-rating">
+            <span class="category-label">Customer Service</span>
+            <div class="category-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <span>4.9</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews-filters">
+    <div class="container">
+      <div class="filters-container">
+        <div class="filter-group">
+          <label for="course-filter">Filter by Course</label>
+          <select id="course-filter">
+            <option value="all">All Courses</option>
+            <option value="piano">Piano</option>
+            <option value="guitar">Guitar</option>
+            <option value="violin">Violin</option>
+            <option value="drums">Drums</option>
+            <option value="voice">Voice</option>
+            <option value="theory">Music Theory</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="rating-filter">Filter by Rating</label>
+          <select id="rating-filter">
+            <option value="all">All Ratings</option>
+            <option value="5">5 Stars</option>
+            <option value="4">4 Stars</option>
+            <option value="3">3 Stars</option>
+            <option value="2">2 Stars</option>
+            <option value="1">1 Star</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="date-filter">Sort by</label>
+          <select id="date-filter">
+            <option value="newest">Newest First</option>
+            <option value="oldest">Oldest First</option>
+            <option value="highest">Highest Rated</option>
+            <option value="lowest">Lowest Rated</option>
+          </select>
+        </div>
+        <button id="reset-filters" class="btn btn-outline">Reset Filters</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews-list">
+    <div class="container">
+      <div class="reviews-grid">
+        <div class="review-card" data-course="piano" data-rating="5">
+          <div class="review-header">
+            <div class="reviewer-info">
+              
+              <div>
+                <h3>Chiranshi Dawar</h3>
+                <p class="reviewer-role">Piano Student's Parent</p>
+              </div>
+            </div>
+            <div class="review-rating">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <span class="review-date">October 15, 2024</span>
+            </div>
+          </div>
+          <div class="review-content">
+            <p>"My daughter has been taking piano lessons at Tunes Music Academy for the past year, and the transformation has been remarkable. Her instructor, Ms. Chen, is patient, encouraging, and knows exactly how to keep her engaged. The curriculum is well-structured, with a good balance of technique, theory, and fun pieces. My daughter looks forward to her lessons every week, which is the best testimony to the quality of teaching."</p>
+          </div>
+          <div class="review-course">
+            <span class="course-tag">Piano Fundamentals</span>
+          </div>
+        </div>
+
+        <div class="review-card" data-course="guitar" data-rating="5">
+          <div class="review-header">
+            <div class="reviewer-info">
+              
+              <div>
+                <h3>Orsburn Azaredo</h3>
+                <p class="reviewer-role">Guitar Student</p>
+              </div>
+            </div>
+            <div class="review-rating">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <span class="review-date">September 28, 2024</span>
+            </div>
+          </div>
+          <div class="review-content">
+            <p>"As an adult beginner, I was nervous about starting guitar lessons, but the staff at Tunes made me feel comfortable from day one. My instructor, Jake, has a knack for explaining complex concepts in simple terms and tailors the lessons to my musical interests. The facility is top-notch with soundproofed rooms and quality instruments. After six months, I'm already playing songs I never thought I could master so quickly!"</p>
+          </div>
+          <div class="review-course">
+            <span class="course-tag">Guitar Basics</span>
+          </div>
+        </div>
+
+        <div class="review-card" data-course="voice" data-rating="5">
+          <div class="review-header">
+            <div class="reviewer-info">
+              
+              <div>
+                <h3>Aryan Agarwal</h3>
+                <p class="reviewer-role">Vocal Student</p>
+              </div>
+            </div>
+            <div class="review-rating">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <span class="review-date">October 2, 2024</span>
+            </div>
+          </div>
+          <div class="review-content">
+            <p>"The vocal training program at Tunes Music Academy exceeded my expectations. My coach, Maria, has helped me extend my range and develop better control over my voice. I've gained so much confidence in my singing abilities. The quarterly recitals are professionally organized and give students real performance experience. I've recommended Tunes to several friends who are equally impressed with the quality of instruction."</p>
+          </div>
+          <div class="review-course">
+            <span class="course-tag">Vocal Performance</span>
+          </div>
+        </div>
+
+        <div class="review-card" data-course="violin" data-rating="4">
+          <div class="review-header">
+            <div class="reviewer-info">
+              
+              <div>
+                <h3>Siddharth Kohli</h3>
+                <p class="reviewer-role">Violin Student's Parent</p>
+              </div>
+            </div>
+            <div class="review-rating">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <span class="review-date">September 15, 2024</span>
+            </div>
+          </div>
+          <div class="review-content">
+            <p>"My son has been learning violin at Tunes for about 8 months now. His instructor is highly skilled and patient with beginners. The progress has been steady, and my son enjoys the lessons. The only reason for not giving 5 stars is that sometimes scheduling make-up lessons can be challenging. However, the quality of instruction is excellent, and the recitals are well-organized, giving students valuable performance experience."</p>
+          </div>
+          <div class="review-course">
+            <span class="course-tag">Violin Foundations</span>
+          </div>
+        </div>
+
+        <div class="review-card" data-course="drums" data-rating="5">
+          <div class="review-header">
+            <div class="reviewer-info">
+              
+              <div>
+                <h3>Vardhini Maheshwari</h3>
+                <p class="reviewer-role">Drums Student</p>
+              </div>
+            </div>
+            <div class="review-rating">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <span class="review-date">August 30, 2024</span>
+            </div>
+          </div>
+          <div class="review-content">
+            <p>"Learning drums at Tunes has been an amazing experience! The dedicated drum rooms are fully equipped with professional kits, and my instructor, Marcus, is not only a great drummer but also an excellent teacher. He breaks down complex rhythms into manageable parts and provides helpful practice resources. In just a few months, I've gone from complete beginner to being able to play along with some of my favorite songs. The energy and encouragement from the staff make every lesson something to look forward to."</p>
+          </div>
+          <div class="review-course">
+            <span class="course-tag">Drum Kit Basics</span>
+          </div>
+        </div>
+
+        <div class="review-card" data-course="theory" data-rating="5">
+          <div class="review-header">
+            <div class="reviewer-info">
+              
+              <div>
+                <h3>Ishita Aggarwal</h3>
+                <p class="reviewer-role">Music Theory Student</p>
+              </div>
+            </div>
+            <div class="review-rating">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <span class="review-date">September 5, 2024</span>
+            </div>
+          </div>
+          <div class="review-content">
+            <p>"The Music Theory course at Tunes Academy has transformed my understanding of music. Professor Miller has a gift for making complex theoretical concepts accessible and engaging. As a pianist of many years, I had gaps in my theoretical knowledge that were holding back my composition efforts. This course filled those gaps systematically, and now I have a much deeper understanding of harmony, form, and analysis. The small class size allows for personalized attention, and the interactive exercises reinforce learning effectively."</p>
+          </div>
+          <div class="review-course">
+            <span class="course-tag">Music Theory Fundamentals</span>
+          </div>
+        </div>
+
+        <div class="review-card" data-course="piano" data-rating="4">
+          <div class="review-header">
+            <div class="reviewer-info">
+              
+              <div>
+                <h3>Akanksha Kothari</h3>
+                <p class="reviewer-role">Piano Student</p>
+              </div>
+            </div>
+            <div class="review-rating">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <span class="review-date">August 20, 2024</span>
+            </div>
+          </div>
+          <div class="review-content">
+            <p>"I've been taking piano lessons at Tunes Academy for about a year, and the experience has been mostly positive. My instructor is knowledgeable and professional, and the facility is well-maintained with quality instruments. The curriculum is comprehensive, covering technique, theory, and repertoire. The reason for 4 stars instead of 5 is that sometimes the pacing feels a bit rushed, especially when preparing for recitals. However, I've made significant progress and would recommend the academy to others interested in learning piano."</p>
+          </div>
+          <div class="review-course">
+            <span class="course-tag">Piano Repertoire & Technique</span>
+          </div>
+        </div>
+
+        <div class="review-card" data-course="guitar" data-rating="5">
+          <div class="review-header">
+            <div class="reviewer-info">
+              
+              <div>
+                <h3>Prachi Singh</h3>
+                <p class="reviewer-role">Guitar Student</p>
+              </div>
+            </div>
+            <div class="review-rating">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <span class="review-date">September 10, 2024</span>
+            </div>
+          </div>
+          <div class="review-content">
+            <p>"Moving from acoustic to electric guitar was intimidating, but the Electric Guitar Techniques course made the transition smooth and enjoyable. Instructor Chris is not only a phenomenal guitarist but also an engaging teacher who makes every lesson fun and challenging. The course covers various styles (rock, blues, jazz) with a good mix of theory and practical application. I especially appreciate the recording sessions where we can hear our progress. The small class size means everyone gets personalized attention. Worth every penny!"</p>
+          </div>
+          <div class="review-course">
+            <span class="course-tag">Electric Guitar Techniques</span>
+          </div>
+        </div>
+
+        <div class="review-card" data-course="voice" data-rating="4">
+          <div class="review-header">
+            <div class="reviewer-info">
+              
+              <div>
+                <h3>Pawani Berry</h3>
+                <p class="reviewer-role">Vocal Student</p>
+              </div>
+            </div>
+            <div class="review-rating">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <span class="review-date">August 25, 2024</span>
+            </div>
+          </div>
+          <div class="review-content">
+            <p>"I joined the Vocal Performance course to improve my singing for our band, and the results have been impressive. The breathing techniques and vocal exercises have significantly improved my range and stamina. My instructor is attentive and provides constructive feedback. The only downside is that the practice rooms can sometimes get booked up quickly during peak hours. Otherwise, I'm very happy with my progress and the professional approach to vocal training."</p>
+          </div>
+          <div class="review-course">
+            <span class="course-tag">Vocal Performance</span>
+          </div>
+        </div>
+      </div>
+      <div class="pagination">
+        <button class="pagination-btn" disabled><i class="fas fa-chevron-left"></i></button>
+        <button class="pagination-btn active">1</button>
+        <button class="pagination-btn">2</button>
+        <button class="pagination-btn">3</button>
+        <button class="pagination-btn"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <section id="write-review">
+    <div class="container">
+      <div class="write-review-container">
+        <h2>Share Your Experience</h2>
+        <p>We value your feedback! Let us know about your experience at Tunes Music Academy.</p>
+        <a href="#" class="btn btn-primary" id="open-review-form">Write a Review</a>
+      </div>
+    </div>
+  </section>
+
+  <div id="review-modal" class="modal-hidden">
+    <div class="modal review-modal">
+      <div class="modal-header">
+        <h3>Write a Review</h3>
+        <button class="close-modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form id="review-form">
+          <div class="form-group">
+            <label for="reviewer-name">Your Name*</label>
+            <input type="text" id="reviewer-name" required>
+          </div>
+          <div class="form-group">
+            <label for="reviewer-email">Email Address*</label>
+            <input type="email" id="reviewer-email" required>
+            <p class="form-note">Your email will not be displayed publicly.</p>
+          </div>
+          <div class="form-group">
+            <label for="review-course">Course/Program*</label>
+            <select id="review-course" required>
+              <option value="">Select a course</option>
+              <option value="piano">Piano Lessons</option>
+              <option value="guitar">Guitar Lessons</option>
+              <option value="violin">Violin Lessons</option>
+              <option value="drums">Drum Lessons</option>
+              <option value="voice">Voice Lessons</option>
+              <option value="theory">Music Theory</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Your Rating*</label>
+            <div class="rating-select">
+              <i class="far fa-star" data-rating="1"></i>
+              <i class="far fa-star" data-rating="2"></i>
+              <i class="far fa-star" data-rating="3"></i>
+              <i class="far fa-star" data-rating="4"></i>
+              <i class="far fa-star" data-rating="5"></i>
+            </div>
+            <input type="hidden" id="rating-value" required>
+          </div>
+          <div class="form-group">
+            <label for="review-text">Your Review*</label>
+            <textarea id="review-text" rows="5" required></textarea>
+            <p class="form-note">Minimum 50 characters required.</p>
+          </div>
+          <div class="form-group checkbox-group">
+            <input type="checkbox" id="review-consent" required>
+            <label for="review-consent">I confirm this is a genuine review based on my own experience.</label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Submit Review</button>
+        </form>
+        <div id="review-success" class="form-success hidden">
+          <i class="fas fa-check-circle"></i>
+          <h3>Thank You!</h3>
+          <p>Your review has been submitted successfully and will appear after moderation.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="reviews-cta" class="parallax">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Join Our Community of Happy Students</h2>
+        <p>Start your musical journey today with Tunes Music Academy</p>
+        <div class="cta-buttons">
+          <a href="courses.html" class="btn btn-primary">Explore Courses</a>
+          <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h3>Tunes Music Academy</h3>
+          <p>Providing exceptional music education since 2008. Our mission is to inspire and nurture musical talent in students of all ages.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> NEW VINOD MODERN ACADEMY, Vikas Lok Ln. No. 4, opposite KUMAR SWEET SHOP, near TIME SQUARE MALL, Vikas Lok, Aamwala, Dehradun, Uttarakhand 248001</li>
+            <li><i class="fas fa-phone"></i> 096344 18955</li>
+            <li><i class="fas fa-envelope"></i> info@tunesmusicacademy.com</li>
+            <li><i class="fas fa-clock"></i> Mon-Fri: 9AM-8PM, Sat: 10AM-6PM</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Tunes Music Academy. All Rights Reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/reviews.js"></script>
+</body>
+</html>
