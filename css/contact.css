@@ -60,8 +60,9 @@
 
 .contact-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: var(--space-5);
+  padding: var(--space-);
 }
 
 .contact-form-container,
@@ -70,6 +71,8 @@
   border-radius: var(--border-radius-lg);
   padding: var(--space-4);
   box-shadow: var(--box-shadow-md);
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .contact-form-container h2,
