@@ -2,7 +2,8 @@
 
 /* Hero Section */
 #hero {
-  text-align: left;
+  height: 500px; /* consistent height */
+  padding-top: 80px; /* match other sections */
 }
 
 .hero-content {
@@ -19,6 +20,8 @@
   font-size: 1.25rem;
   margin-bottom: var(--space-4);
 }
+
+
 
 /* Features Section */
 #features {

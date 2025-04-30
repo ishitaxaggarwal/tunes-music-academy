@@ -318,8 +318,9 @@
 
 .modal-instructor-info {
   display: flex;
-  align-items: center;
-  margin-bottom: var(--space-3);
+  flex-direction: column; 
+  align-items: flex-start; 
+  
 }
 
 .modal-instructor-info img {
@@ -330,10 +331,15 @@
   margin-right: var(--space-2);
 }
 
+.modal-instructor-bio {
+  margin-top: 0;
+}
+
 .modal-instructor-name {
   font-weight: 600;
   font-size: 1.125rem;
-  margin-bottom: 0.25rem;
+  margin-bottom: 10px;
+  
 }
 
 /* Responsive Styles */

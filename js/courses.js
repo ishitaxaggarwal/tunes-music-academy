@@ -61,7 +61,7 @@ if (resetFiltersBtn) {
 const courseDetailBtns = document.querySelectorAll('.course-details-btn');
 const courseDetailModal = document.getElementById('course-detail-modal');
 
-// Course details data (in a real application, this would come from a database)
+// Course details data
 const courseDetails = {
   'piano-fundamentals': {
     title: 'Piano Fundamentals',
@@ -69,7 +69,7 @@ const courseDetails = {
     duration: '12 Weeks, 1 Hour/Week',
     level: 'Beginner',
     age: 'All Ages (5+)',
-    price: '$299',
+    price: '₹6000',
     description: 'This course is designed for absolute beginners with no prior experience playing the piano. You\'ll learn proper hand positioning, basic note reading, and fundamental techniques to start your piano journey. By the end of the course, you\'ll be able to play simple pieces and have a foundation for further advancement.',
     curriculum: [
       'Proper posture and hand technique',
@@ -81,9 +81,8 @@ const courseDetails = {
       'End-of-course recital performance'
     ],
     instructor: {
-      name: 'Emily Chen',
-      image: 'https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg',
-      bio: 'Concert pianist with over 15 years of teaching experience, specializing in beginner and intermediate instruction.'
+      name: 'SAPAN SHARMA',
+      bio: 'Professional pianist with extensive teaching experience, specializing in beginner and intermediate instruction.'
     }
   },
   'piano-intermediate': {
@@ -92,7 +91,7 @@ const courseDetails = {
     duration: '16 Weeks, 1 Hour/Week',
     level: 'Intermediate',
     age: 'Teens & Adults',
-    price: '$399',
+    price: '₹8000',
     description: 'Building on foundational piano skills, this intermediate course focuses on developing more advanced techniques and expanding your repertoire. You\'ll work on a variety of musical styles, improve your sight-reading abilities, and deepen your understanding of music theory concepts as they apply to performance.',
     curriculum: [
       'Advanced finger techniques and exercises',
@@ -104,9 +103,8 @@ const courseDetails = {
       'Solo and ensemble performance opportunities'
     ],
     instructor: {
-      name: 'Robert Davis',
-      image: 'https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg',
-      bio: 'Specializes in jazz and contemporary piano styles with extensive performance experience throughout North America and Europe.'
+      name: 'SAPAN SHARMA',
+      bio: 'Professional pianist with extensive teaching experience.'
     }
   },
   'guitar-basics': {
@@ -115,21 +113,19 @@ const courseDetails = {
     duration: '10 Weeks, 1 Hour/Week',
     level: 'Beginner',
     age: 'All Ages (8+)',
-    price: '$279',
-    description: 'This introductory guitar course is perfect for those who have never picked up a guitar before. You\'ll learn the essentials of guitar playing including proper technique, basic chords, and simple strumming patterns. By the end of the course, you\'ll be able to play several songs and have the confidence to continue your guitar journey.',
+    price: '₹6000',
+    description: 'Start your guitar journey with proper technique, chord foundations, and strumming patterns.',
     curriculum: [
-      'Parts of the guitar and proper holding technique',
-      'Tuning your instrument',
-      'Basic open chords and power chords',
-      'Simple strumming and picking patterns',
-      'Reading guitar tablature and chord diagrams',
-      'Playing your first songs',
-      'Basic instrument maintenance'
+      'Guitar basics and proper technique',
+      'Basic chords and progressions',
+      'Strumming patterns',
+      'Reading tablature',
+      'Simple songs and melodies',
+      'Music theory fundamentals'
     ],
     instructor: {
-      name: 'Jake Thompson',
-      image: 'https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg',
-      bio: 'Former touring guitarist with a passion for teaching beginners the joy of playing guitar.'
+      name: 'SAPAN SHARMA',
+      bio: 'Experienced guitar instructor specializing in beginner techniques.'
     }
   },
   'electric-guitar': {
@@ -138,21 +134,19 @@ const courseDetails = {
     duration: '12 Weeks, 1 Hour/Week',
     level: 'Intermediate',
     age: 'Teens & Adults',
-    price: '$349',
-    description: 'Take your electric guitar playing to the next level with this focused course on rock, blues, and jazz techniques. You\'ll develop your soloing abilities, learn to use effects pedals, and explore various styles of electric guitar playing. Ideal for guitarists who are comfortable with basic chords and want to expand their skills.',
+    price: '₹6000',
+    description: 'Focus on rock, blues, and jazz styles with emphasis on soloing, effects, and expressive playing.',
     curriculum: [
-      'Scale patterns and application in solos',
-      'Understanding amplifiers and tone',
-      'Effects pedals and signal chain basics',
-      'Rock, blues, and jazz stylistic techniques',
-      'Improvisation approaches',
-      'Bending, vibrato, and expressive techniques',
-      'Recording basics for electric guitar'
+      'Advanced guitar techniques',
+      'Effects and tone shaping',
+      'Improvisation and soloing',
+      'Genre-specific styles',
+      'Performance techniques',
+      'Recording basics'
     ],
     instructor: {
-      name: 'Sophia Rodriguez',
-      image: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg',
-      bio: 'Professional electric guitarist with extensive studio recording experience and expertise in multiple genres.'
+      name: 'SAPAN SHARMA',
+      bio: 'Professional guitarist specializing in electric guitar styles.'
     }
   },
   'violin-foundations': {
@@ -161,21 +155,19 @@ const courseDetails = {
     duration: '12 Weeks, 1 Hour/Week',
     level: 'Beginner',
     age: 'Ages 7+',
-    price: '$329',
-    description: 'Begin your violin journey with proper fundamentals and technique. This course covers everything from holding the instrument and bow correctly to playing your first melodies. Our patient approach ensures steady progress through the challenging early stages of violin learning.',
+    price: '₹6000',
+    description: 'Learn proper violin posture, bow technique, and basic pieces.',
     curriculum: [
-      'Proper posture and instrument holding',
-      'Bow hold and basic bowing techniques',
-      'Left hand positioning and fingering',
-      'Reading music for violin (including clefs and notation)',
-      'Introduction to scales and simple pieces',
-      'Ear training and pitch matching',
-      'Group performance experience'
+      'Proper posture and holding',
+      'Bow technique',
+      'Basic note reading',
+      'Simple pieces',
+      'Music theory basics',
+      'Practice techniques'
     ],
     instructor: {
-      name: 'Stephanie Park',
-      image: 'https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg',
-      bio: 'Classically trained violinist with experience teaching the Suzuki method and traditional approaches to students of all ages.'
+      name: 'SAPAN SHARMA',
+      bio: 'Experienced violin instructor for beginners.'
     }
   },
   'vocal-performance': {
@@ -184,56 +176,52 @@ const courseDetails = {
     duration: '10 Weeks, 1 Hour/Week',
     level: 'All Levels',
     age: 'Teens & Adults',
-    price: '$299',
-    description: 'Develop your singing voice through proper technique, breathing exercises, and performance skills. This course is adaptable to various skill levels, focusing on your individual vocal development while also providing opportunities for group singing and performance experience.',
+    price: '₹6000',
+    description: 'Develop your singing voice through proper technique and performance skills.',
     curriculum: [
-      'Proper breathing techniques for singing',
-      'Vocal warm-ups and exercises',
-      'Extending vocal range safely',
-      'Diction and articulation',
-      'Performance skills and stage presence',
-      'Microphone technique',
-      'Solo and ensemble singing opportunities'
+      'Breathing techniques',
+      'Vocal exercises',
+      'Range development',
+      'Performance skills',
+      'Song interpretation',
+      'Stage presence'
     ],
     instructor: {
-      name: 'Maria Johnson',
-      image: 'https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg',
-      bio: 'Professional vocalist with background in opera, musical theater, and contemporary styles. Specializes in healthy vocal technique.'
+      name: 'BHASKAR GANGULY',
+      bio: 'Professional vocal coach with extensive performance experience.'
     }
   },
   'drum-basics': {
     title: 'Drum Kit Basics',
-    image: 'https://images.pexels.com/photos/3784566/pexels-photo-3784566.jpeg',
+    image: 'https://images.ctfassets.net/3s5io6mnxfqz/2HNsNbf0vLjrPWBHAzTCTW/ffa20bf84222733d71cbc1a71ff2ed20/AdobeStock_71496802.jpeg?w=1920',
     duration: '8 Weeks, 1 Hour/Week',
     level: 'Beginner',
     age: 'Ages 8+',
-    price: '$279',
-    description: 'Learn the fundamentals of playing the drum kit, from proper stick grip and striking technique to basic beats and fills. This course emphasizes coordination, timing, and rhythm, giving you a solid foundation for playing a variety of musical styles on the drums.',
+    price: '₹5000',
+    description: 'Learn the fundamentals of playing the drum kit, from proper stick grip to basic beats.',
     curriculum: [
-      'Drum kit components and setup',
-      'Proper stick grip and striking technique',
-      'Basic beats and rhythmic patterns',
-      'Coordination exercises',
+      'Drum kit introduction',
+      'Basic rhythms and patterns',
+      'Proper technique',
       'Reading drum notation',
       'Simple fills and transitions',
-      'Introduction to different musical styles'
+      'Practice routines'
     ],
     instructor: {
-      name: 'Marcus Williams',
-      image: 'https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg',
-      bio: 'Professional drummer with extensive experience in rock, jazz, and session work. Known for his patient teaching approach.'
+      name: 'BHASKAR GANGULY',
+      bio: 'Professional drummer with extensive teaching experience.'
     }
   },
-  'saxophone-studies': {
-    title: 'Saxophone Studies',
-    image: 'https://images.pexels.com/photos/33597/guitar-classical-guitar-acoustic-guitar-electric-guitar.jpg',
+  'Flute Studies': {
+    title: 'Flute Studies',
+    image: 'https://kayasanatakademi.com/wp-content/uploads/2019/10/yan-flut-kursu.jpg',
     duration: '12 Weeks, 1 Hour/Week',
     level: 'All Levels',
     age: 'Ages 10+',
-    price: '$349',
-    description: 'From beginner to intermediate levels, this comprehensive saxophone course covers proper embouchure, tone production, and musical repertoire. Whether you\'re just starting out or looking to improve your existing skills, this course provides structured learning tailored to your level.',
+    price: '₹6000',
+    description: 'From beginner to intermediate levels, this comprehensive Flute course covers proper embouchure, tone production, and musical repertoire. Whether you\'re just starting out or looking to improve your existing skills, this course provides structured learning tailored to your level.',
     curriculum: [
-      'Saxophone assembly and maintenance',
+      'Flute maintenance',
       'Proper embouchure and breathing technique',
       'Tone production and development',
       'Fingering and note production',
@@ -242,9 +230,8 @@ const courseDetails = {
       'Improvisation basics (for intermediate students)'
     ],
     instructor: {
-      name: 'Daniel Kim',
-      image: 'https://images.pexels.com/photos/1587009/pexels-photo-1587009.jpeg',
-      bio: 'Multi-instrumentalist specializing in saxophone and clarinet. Experienced in classical, jazz, and contemporary performance.'
+      name: 'BHASKAR GANGULY',
+      bio: 'Multi-instrumentalist specializing in Flute and clarinet. Experienced in classical, jazz, and contemporary performance.'
     }
   },
   'music-theory': {
@@ -253,21 +240,19 @@ const courseDetails = {
     duration: '8 Weeks, 1 Hour/Week',
     level: 'All Levels',
     age: 'Teens & Adults',
-    price: '$199',
-    description: 'Develop a solid understanding of music theory concepts applicable to all instruments. This course covers scales, chords, rhythm, and notation, providing essential knowledge for any musician wanting to deepen their understanding of how music works.',
+    price: '₹8000',
+    description: 'Essential knowledge of scales, chords, rhythm, and notation.',
     curriculum: [
-      'Note reading and staff notation',
-      'Key signatures and scales',
-      'Intervals and chord construction',
-      'Rhythm notation and time signatures',
-      'Harmonic progressions',
-      'Musical form and analysis',
-      'Ear training and sight-singing'
+      'Note reading',
+      'Scales and keys',
+      'Chord construction',
+      'Rhythm and meter',
+      'Musical analysis',
+      'Ear training'
     ],
     instructor: {
-      name: 'David Miller',
-      image: 'https://images.pexels.com/photos/3785424/pexels-photo-3785424.jpeg',
-      bio: 'Ph.D. in Music Theory with extensive teaching experience at the university level. Makes complex concepts accessible and engaging.'
+      name: 'SAPAN SHARMA',
+      bio: 'Experienced music theory instructor.'
     }
   }
 };
@@ -298,7 +283,6 @@ function populateCourseModal(courseId) {
   });
   
   // Set instructor info
-  document.getElementById('modal-instructor-image').src = courseData.instructor.image;
   document.getElementById('modal-instructor-name').textContent = courseData.instructor.name;
   document.getElementById('modal-instructor-bio').textContent = courseData.instructor.bio;
   
